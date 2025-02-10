@@ -12,11 +12,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #6366f1;
+  background-color: #a29e33;
 }
 
 .btn-default {
-  background-color: #6366f1;
+  background-color: #e6df14;
   display: flex;
   align-items: center;
   border: none;
@@ -24,7 +24,7 @@ body {
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
-  color: #ffffff;
+  color: #b51f1f;
   cursor: pointer;
   gap: 8px;
   height: fit-content;
@@ -55,7 +55,7 @@ body {
 
 #form_title {
   font-weight: 500;
-  color: #272727;
+  color: #2d372c;
   position: relative;
 }
 
@@ -70,18 +70,23 @@ body {
   bottom: 0;
 }
 
-#form {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 32px;
-  height: 100%;
+#form { /*alterei aqui também, mas já está como estava*/
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+gap: 32px;
+height: 100%;
 }
 
 #input_container {
   display: grid;
   gap: 24px;
 }
+
+/*.input-box { 
+  display: grid;
+  gap: 24px;
+}*/
 
 .form-label {
   font-size: 12px;

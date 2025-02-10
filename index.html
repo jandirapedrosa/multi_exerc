@@ -8,26 +8,31 @@
   <title>Formulário</title>
 </head>
 <body>
+
   <main id="form_container">
-    <div id="form_header">
+<!--Cabeçalho com título-->
+    <header id="form_header">
         <h1 id="form_title">
           Criar conta
         </h1>
         <button class="btn-default">
         <i class="fa-solid fa-right-to-bracket"></i>
         </button>
-    </div>
+    </header>
 
+<!--FORMULÁRIO-->
     <form action="" id="form">
-      <div id="input_container">
+
+      <article id="input_container">
+
 <!--Primeiro input box-->
-        <div class="input-box">
-            <label
+        <section class="input-box">
+          <label
                 for="name"
                 class="form-label"
             >
                 Primeiro nome
-            </label>
+          </label>
             <div class="input-field">
                 <input
                     type="text"
@@ -36,18 +41,19 @@
                     class="form-control"
                     placeholder="Hannah"
                 >
-                <i class="fa-regular fa-user"></i>
+              <i class="fa-regular fa-user"></i>
             </div>
-        </div>
+        </section>
+
 <!-- Segundo input box-->
-        <div class="input-box">
+        <section class="input-box">
           <label
               for="last_name"
               class="form-label"
           >
               Último nome
           </label>
-          <div class="input-field">
+            <div class="input-field">
               <input
                   type="text"
                   name="last_name"
@@ -55,153 +61,158 @@
                   class="form-control"
                   placeholder="Montana"
               >
-              <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user"></i>
           </div>
-      </div>
+        </section>
+
 <!-- Terceiro input box-->
-        <div class="input-box">
+        <section class="input-box">
           <label
             for="birthdate"
             class="form-label"
         >
             Nascimento
-        </label>
-        <div class="input-field">
-            <input
+          </label>
+            <div class="input-field">
+              <input
                 type="date"
                 name="birthdate"
                 id="birthdate"
                 class="form-control"
-            >
-        </div>
-      </div>
+              >
+            </div>
+        </section>
 
 <!-- Quarto input box-->
-        <div class="input-box">
+        <section class="input-box">
           <label
             for="email"
             class="form-label"
         >
             E-mail
-        </label>
-        <div class="input-field">
-            <input
+          </label>
+            <div class="input-field">
+              <input
                 type="email"
                 name="email"
                 id="email"
                 class="form-control"
                 placeholder="exemplo@gmail.com"
-            >
+              >
             <i class="fa-regular fa-envelope"></i>
-        </div>
-      </div>
+            </div>
+        </section>
 
 <!-- Quinto input box-->
-<div class="input-box">
-  <label
-      for="password"
-      class="form-label"
-  >
-      Senha
-  </label>
-  <div class="input-field">
-      <input
-          type="password"
-          name="password"
-          id="password"
-          class="form-control"
-          placeholder="*******"
-      >
-      <i class="fa-regular fa-eye-slash password-icon"></i>
-  </div>
-</div>
+        <section class="input-box">
+          <label
+            for="password"
+            class="form-label"
+          >
+            Senha
+          </label>
+            <div class="input-field">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+                placeholder="*******"
+              >
+              <i class="fa-regular fa-eye-slash password-icon"></i>
+            </div>
+        </section>
 
 <!-- Sexto input box-->
-<div class="input-box">
-  <label
-      for="confirm_password"
-      class="form-label"
-  >
-      Confirmar senha
-  </label>
-  <div class="input-field">
-      <input
-          type="password"
-          name="confirm_password"
-          id="confirm_password"
-          class="form-control"
-          placeholder="*******"
-      >
-      <i class="fa-regular fa-eye-slash password-icon"></i>
-  </div>
-</div>
+        <section class="input-box">
+          <label
+            for="confirm_password"
+            class="form-label"
+          >
+            Confirmar senha
+          </label>
+            <div class="input-field">
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                class="form-control"
+                placeholder="*******"
+              >
+              <i class="fa-regular fa-eye-slash password-icon"></i>
+          </div>
+        </section>
+
 <!--Gênero box-->
-        <div class="radio-container">
+        <aside class="radio-container">
           <label class="form-label">
             Gênero
           </label>
 <!--Gênero feminino-->
-          <div id="gender_inputs">
-            <div class="radio_box">
-              <input
-                  type="radio"
-                  name="gender"
-                  id="female"
-                  class="form-control"
-                  value="female"
-              >
+        <section id="gender_inputs">
+          <div class="radio_box">
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              class="form-control"
+              value="female"
+            >
               <label
-                  for="female"
-                  class="form-lable"
+                for="female"
+                class="form-lable"
               >
                 Feminino
               </label>
             </input>
-            </div>
           </div>
+        </section>
+
 <!---Gênero masculino-->
-          <div class="radio_box">
-              <input
-                type="radio"
-                name="gender"
-                id="male"
-                class="form-control"
-                value="male"
-              >
-              <label
-                  for="male"
-                  class="form-lable"
-              >
-                Masculino
-              </label>
-            </input>
-          </div>
+        <div class="radio_box">
+          <input
+            type="radio"
+            name="gender"
+            id="male"
+            class="form-control"
+            value="male"
+          >
+            <label
+              for="male"
+              class="form-lable"
+            >
+              Masculino
+            </label>
+          </input>
+        </div>
 
 <!---Gênero outre-->
-<div class="radio_box">
-  <input
-    type="radio"
-    name="gender"
-    id="other"
-    class="form-control"
-    value="other"
-  >
-  <label
-      for="other"
-      class="form-lable"
-  >
-    Outre
-  </label>
-</input>
-</div>
+        <div class="radio_box">
+          <input
+            type="radio"
+            name="gender"
+            id="other"
+            class="form-control"
+            value="other"
+          >
+            <label
+              for="other"
+              class="form-lable"
+            >
+              Outre
+            </label>
+          </input>
         </div>
-      </div>
+        </aside>
+
       <button type="submit" class="btn_default">
         <i class="fa-solid fa-check"></i>
         Criar conta
       </button>
-    </form>
 
+      </article>
+    </form>
+      
   </main>
 
 <script src="src/javascript/script.js"></script>
