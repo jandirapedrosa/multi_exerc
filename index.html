@@ -10,6 +10,7 @@
 <body>
 
   <main id="form_container">
+    
 <!--Cabeçalho com título-->
     <header id="form_header">
         <h1 id="form_title">
@@ -143,72 +144,34 @@
           </div>
         </section>
 
-<!--Gênero box-->
+<!--Género-->
         <aside class="radio-container">
-          <label class="form-label">
-            Gênero
-          </label>
-<!--Gênero feminino-->
-        <section id="gender_inputs">
-          <div class="radio_box">
-            <input
-              type="radio"
-              name="gender"
-              id="female"
-              class="form-control"
-              value="female"
-            >
-              <label
-                for="female"
-                class="form-lable"
-              >
-                Feminino
-              </label>
-            </input>
+          <label class="form-label">Gênero</label>
+          <div id="gender_inputs">
+            <!-- Gênero feminino -->
+            <div class="radio_box">
+              <input type="radio" name="gender" id="female" class="gender-input" value="female">
+              <label for="female" class="form-label">Feminino</label>
+            </div>
+        
+            <!-- Gênero masculino -->
+            <div class="radio_box">
+              <input type="radio" name="gender" id="male" class="gender-input" value="male">
+              <label for="male" class="form-label">Masculino</label>
+            </div>
+        
+            <!-- Gênero outro -->
+            <div class="radio_box">
+              <input type="radio" name="gender" id="other" class="gender-input" value="other">
+              <label for="other" class="form-label">Outro</label>
+            </div>
           </div>
-        </section>
-
-<!---Gênero masculino-->
-        <div class="radio_box">
-          <input
-            type="radio"
-            name="gender"
-            id="male"
-            class="form-control"
-            value="male"
-          >
-            <label
-              for="male"
-              class="form-lable"
-            >
-              Masculino
-            </label>
-          </input>
-        </div>
-
-<!---Gênero outre-->
-        <div class="radio_box">
-          <input
-            type="radio"
-            name="gender"
-            id="other"
-            class="form-control"
-            value="other"
-          >
-            <label
-              for="other"
-              class="form-lable"
-            >
-              Outre
-            </label>
-          </input>
-        </div>
         </aside>
 
-      <button type="submit" class="btn_default">
-        <i class="fa-solid fa-check"></i>
-        Criar conta
-      </button>
+<!--Botão criar conta-->
+        <button type="submit" class="btn_default">
+          <i class="fa-solid fa-check"></i> Criar conta
+        </button>
 
       </article>
     </form>
