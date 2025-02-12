@@ -12,11 +12,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #a29e33;
+  background-color: #e3f2fd;
 }
 
 .btn-default {
-  background-color: #e6df14;
+  background-color: #1565c0;
   display: flex;
   align-items: center;
   border: none;
@@ -24,7 +24,7 @@ body {
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
-  color: #b51f1f;
+  color: #ffffff;
   cursor: pointer;
   gap: 8px;
   height: fit-content;
@@ -33,7 +33,7 @@ body {
 }
 
 .btn-default:hover {
-  background-color: #818cf8;
+  background-color: #0d47a1;
 }
 
 #form_container {
