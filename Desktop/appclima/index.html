@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style/style.css">
+  <title>Weather forecast</title>
+</head>
+<body>
+<!--Este div vai ser todo o card, o bloco com toda a informação
+Vai ter o formulário e o dados que vem a seguir-->
+  <div id="container">
+
+    <!--O fomrulário-->
+    <form id="search">
+      <i class="fa-solid fa-location-dot"></i>
+      <input
+        type="search"
+        name="city_name"
+        id="city_name"
+        placeholder="Buscar cidade"
+      >
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <!--O título-->
+    <div id="weather">
+      <h1 id="title">Faial, Açores</h1>
+
+      <!--as informações-->
+      <div id="info">
+
+        <!--div temperatura-->
+        <div id="temp">
+          <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
+
+          <!--div informações do tempo/valores-->
+          <div>
+            <p id="temp_value">
+              32 <sup>C°</sup>
+            </p>
+            <p id="temp_description">
+              Ensolarado
+            </p>
+          </div>
+        </div>
+
+        <!--div de outras informações-->
+        <div id="other_infos">
+
+          <!--div info1-->
+          <div class="info">
+            <i class="fa-solid fa-temperature-high"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>
